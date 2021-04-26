@@ -63,9 +63,8 @@ No other racers
 		longer roads (bigger batch size)     
 		——> more state combinations      
 		——> more complex agent needed     
-	    		= more complex model     
-	    		= more time & money     
-
+		= more complex model     
+	    	= more time & money     
 
 #
 
