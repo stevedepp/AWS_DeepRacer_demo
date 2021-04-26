@@ -46,22 +46,22 @@ No other racers
 
 ### 3. Great place to learn RL     
 
-	✓	**RL ingredients**     
-	environment —> states       —> agent —> actions                  —> rewards     
-	race track     —> race type —> car      —> speed & steering —> points     
+- [x] **RL ingredients**     
+	environment —> states    —> agent —> actions          —> rewards     
+	race track  —> race type —> car   —> speed & steering —> points     
 
-	✓	**Agent = car**     
+- [x] **Agent = car**     
 
-	✓	**Environment = track** 
+- [x] **Environment = track** 
 	turns      
 	obstacles      
 	other racers     
 	narrower roads     
 	longer roads (bigger batch size)     
-	——> 	more state combinations      
-	——> 	more complex agent needed     
-			= more complex model     
-			= more time & money     
+	——> more state combinations      
+	——> more complex agent needed     
+	    = more complex model     
+	    = more time & money     
 
 
 #
