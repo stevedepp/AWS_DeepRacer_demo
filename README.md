@@ -41,25 +41,7 @@ Please click the video to hear sound or follow along with the slides and transcr
 
 **Seen in 2 ways:**     
 
-	1.	<span style="color:red">some Evaluating completion text</span> > Training completion
-		Stochastic reward 
-
-		Exploitation vs. Exploration: 
-		
-			Evaluation is greedy.  Only looks for sure things.
-			Training explores, revisits weaker action-state pairs.
-
-	2.	Correlation ( Evaluating completion vs. (Reward & Training completion) ) < )
-
-		Evaluating completion goes down
-		Reward goes up & Training completion goes up
-
-		Overfitting because of less exploration or less successful exploration. 
-	 
-		Evaluating completion goes up
-		Reward goes down & Training completion goes down
-
-		Generalizing because of more exploration or more successful exploration. 
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/38410965/116015445-40f96480-a607-11eb-85b2-44d1f18d66c7.png">
 
 #
 
