@@ -64,44 +64,45 @@ No other racers
 		——> more state combinations      
 		——> more complex agent needed     
 		= more complex model     
-	    	= more time & money     
+		= more time & money     
+
+<img width="720" alt="The 2019 DeepRacer" src="https://user-images.githubusercontent.com/38410965/116015794-95e9aa80-a608-11eb-800b-a43b6f0e142d.png">
 
 #
 
 > So, my objective for, you know this project was to play around with AWS a bit, to apply reinforcement learning concepts, to build a model, and to look under the hood of AWS and the model itself.   AWS makes easy to do this in just really, you know, 5 steps.  
 
-
-
-
-
+![images](https://user-images.githubusercontent.com/38410965/116015812-a4d05d00-a608-11eb-99f8-830b9d601912.jpeg)
 
 ### 4. Objective:     
 
-	Play with AWS console      
-	Apply RL Concepts      
-	Build a time trial model     
-	Under the hood     
+		Play with AWS console      
+		Apply RL Concepts      
+		Build a time trial model     
+		Under the hood     
 
 **Novice with limited budget:**     
-	environment = race track with gentle turns	     
-	race type = time trial = alone on track     
-	car = one headlight + no mirrors     
-	actions = slow is 1m/s & steady has fewer steering clicks     
-	rewards = not too slow, stay in middle, don’t turn too much     
-	—> quickly training model     
+
+		environment = race track with gentle turns	     
+		race type = time trial = alone on track     
+		car = one headlight + no mirrors     
+		actions = slow is 1m/s & steady has fewer steering clicks     
+		rewards = not too slow, stay in middle, don’t turn too much     
+		—> quickly training model     
 
 **5 steps to submitting a model to the April time trials**     
 
 **Later:**     
-	better robot hardware     
-		head to head     
-		object avoidance     
-		object recognition     
-	better understanding      
-		bootcamp videos (21 total)     
-			https://www.aws.training/Details/eLearning?id=32143     
-		AWS Training and Certification team:     
-			https://www.aws.training/Details/eLearning?id=32143     
+
+		better robot hardware     
+			head to head     
+			object avoidance     
+			object recognition     
+		better understanding      
+			bootcamp videos (21 total)     
+				https://www.aws.training/Details/eLearning?id=32143     
+			AWS Training and Certification team:     
+				https://www.aws.training/Details/eLearning?id=32143     
 
 #
 
