@@ -76,33 +76,34 @@ No other racers
 
 ### 4. Objective:     
 
-		Play with AWS console      
-		Apply RL Concepts      
-		Build a time trial model     
-		Under the hood     
+- Play with AWS console      
+- Apply RL Concepts      
+- Build a time trial model     
+- Under the hood     
 
 **Novice with limited budget:**     
 
-		environment = race track with gentle turns	     
-		race type = time trial = alone on track     
-		car = one headlight + no mirrors     
-		actions = slow is 1m/s & steady has fewer steering clicks     
-		rewards = not too slow, stay in middle, don’t turn too much     
-		—> quickly training model     
+- environment = race track with gentle turns	     
+- race type = time trial = alone on track     
+- car = one headlight + no mirrors     
+- actions = slow is 1m/s & steady has fewer steering clicks     
+- rewards = not too slow, stay in middle, don’t turn too much     
+
+—> quickly training model     
 
 **5 steps to submitting a model to the April time trials**     
 
 **Later:**     
 
-		better robot hardware     
-			head to head     
-			object avoidance     
-			object recognition     
-		better understanding      
-			bootcamp videos (21 total)     
-				https://www.aws.training/Details/eLearning?id=32143     
-			AWS Training and Certification team:     
-				https://www.aws.training/Details/eLearning?id=32143     
+- better robot hardware     
+  - head to head      
+  - object avoidance     
+  - object recognition     
+- better understanding      
+  - bootcamp videos (21 total)     
+    - https://www.aws.training/Details/eLearning?id=32143     
+  - AWS Training and Certification team:     
+    - https://www.aws.training/Details/eLearning?id=32143     
 
 #
 
