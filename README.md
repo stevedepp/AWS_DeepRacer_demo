@@ -114,35 +114,35 @@ No other racers
 ### Step 0 = 5 minutes	     
 		
 **IAM roles defined in pop out if needed**	     
-	⁃	AWS DR requires      
-	⁃	Service Role —> resources & make calls     
-		⁃	Maker Role —> SageMaker manage resources     
-		⁃	RoboMaker Access Role —> RoboMaker manage resources     
-		⁃	Lambda Access Role —> Lambda function calls resources     
-		⁃	CloudFormation Access Role —> create/manage needed stacks     
+- AWS DR requires      
+- Service Role —> resources & make calls     
+  - Maker Role —> SageMaker manage resources     
+  - RoboMaker Access Role —> RoboMaker manage resources     
+  - Lambda Access Role —> Lambda function calls resources     
+  - CloudFormation Access Role —> create/manage needed stacks     
 	
 **AWS Resources**      
-	⁃	CloudFormation stack     
-	Learn about AWS CloudFormation     
-	⁃	S3 bucket     
-	⁃	model configurations     
-	⁃	training output     
-	⁃	virtual circuit logs     
-	⁃	Learn about AWS S3     
-	⁃	AWS Lambda      
-	⁃	test reward function —> training model     
-	⁃	Learn about AWS Lambda     
-	⁃	AWS RoboMaker / SageMaker     
-	⁃	SageMaker training job     
-	⁃	RoboMaker simulation     
-	⁃	inside VPC (Virtual Private Cloud)     
-	⁃	exchange data via S3     
-	⁃	AWS RoboMaker simulation application     
-	⁃	virtual AWS DR representation      
-	⁃	onto     
-	⁃	virtual representation of track     
-	⁃	using rigid body physics simulator     
-		—> predictions of real world behavior     
+- CloudFormation stack     
+  - Learn about [AWS CloudFormation](https://aws.amazon.com/cloudformation/)    
+- S3 bucket     
+  - model configurations     
+  - training output     
+  - virtual circuit logs     
+  - Learn about [AWS S3](https://aws.amazon.com/s3/)     
+  - AWS Lambda      
+  - test reward function —> training model     
+  - Learn about [AWS Lambda](https://aws.amazon.com/lambda/)     
+- AWS RoboMaker / SageMaker     
+  - SageMaker training job     
+  - RoboMaker simulation     
+  - inside VPC (Virtual Private Cloud)     
+  - exchange data via S3     
+- AWS RoboMaker simulation application     
+  - virtual AWS DR representation      
+  - onto     
+  - virtual representation of track     
+  - using rigid body physics simulator     
+  - —> predictions of real world behavior     
 
 #
 
@@ -154,7 +154,9 @@ No other racers
 RL drives the DR     
 Know RL —> create / optimize model that drives your car —> win     
 
+<img width="1052" alt="What is reinforcement learning" src="https://user-images.githubusercontent.com/38410965/116016426-9420e680-a60a-11eb-8345-4bb12ec7dff7.png">
 
+<img width="473" alt="In reinforcement learning, an agent interacts with an" src="https://user-images.githubusercontent.com/38410965/116016436-997e3100-a60a-11eb-87ee-a94a13f1e25b.png">
 
 #
 
@@ -162,7 +164,7 @@ Know RL —> create / optimize model that drives your car —> win
 
 ### Step 1.1
 
-
+<img width="1041" alt="The agent simulates the AWS DeepRacer vehicle in the" src="https://user-images.githubusercontent.com/38410965/116016446-a13dd580-a60a-11eb-9a78-348d2373ef57.png">
 
 #
 
@@ -170,14 +172,14 @@ Know RL —> create / optimize model that drives your car —> win
 
 ### Step 1.2
 
-
+<img width="1040" alt="Environment" src="https://user-images.githubusercontent.com/38410965/116016455-a8fd7a00-a60a-11eb-928d-a27ab70f6ce1.png">
 
 **So easy: Will these become household words?**
-	⁃	agent
-	⁃	environment 
-	⁃	action			
-	⁃	state 			
-	⁃	reward
+- agent
+- environment 
+- action			
+- state 			
+- reward
 
 #
  
@@ -187,6 +189,7 @@ Know RL —> create / optimize model that drives your car —> win
 
 Action	= agents moves = steering angle + speed
 
+<img width="1034" alt="Steering" src="https://user-images.githubusercontent.com/38410965/116016484-bd417700-a60a-11eb-8cde-3cb8cdde8be0.png">
 
 #
 
@@ -196,6 +199,7 @@ Action	= agents moves = steering angle + speed
 
 state = camera feed + LIDAR + boxes on tarmac
 
+<img width="1046" alt="Environment" src="https://user-images.githubusercontent.com/38410965/116016501-c92d3900-a60a-11eb-810b-c7f26ffc70d5.png">
 
 #
 
@@ -203,10 +207,11 @@ state = camera feed + LIDAR + boxes on tarmac
 
 ### Step 1.5 
 
-Reward = environmental feedback to agent per action and state
-		      defined by reward function 
+Reward 
+- environmental feedback to agent per action and state
+- defined by reward function 
 
-
+<img width="1034" alt="The reward is the score given as feedback to the agent when it" src="https://user-images.githubusercontent.com/38410965/116016541-eb26bb80-a60a-11eb-9e08-2e432882c782.png">
 
 #
 
@@ -215,24 +220,25 @@ Reward = environmental feedback to agent per action and state
 ### Step 2 
 
 **Create Model**     
-	✓	Agent = car     
-	✓	Environment = track     
-	◦	Reward function:     
+- [x] Agent = car     
+- [x] Environment = track     
+- [ ] Reward function:     
 
 Give the dog a bone …     
 
+<img width="209" alt="Position on track" src="https://user-images.githubusercontent.com/38410965/116016575-05f93000-a60b-11eb-9655-5bca7dddd8bd.png">
 
 **Grafted 2 different snippets:**     
 
 Pseudocode:     
 
-	`def reward_function:     
+def reward_function:     
 
 		Distance from center:          
 			0.10 meter —> 1.00 reward     
 			0.25 meter —> 0.50 reward     
 			0.50 meter —> 0.10 reward     
-	    	       #^$%@!! meter —> 0.00 reward     
+			#^$%@!! meter —> 0.00 reward     
 
 		Speed < 0.5 —> 50% discounted rewards      
 
@@ -240,7 +246,7 @@ Pseudocode:
 
 		return reward`     
 
-
+<img width="1007" alt="Create model" src="https://user-images.githubusercontent.com/38410965/116016648-4789db00-a60b-11eb-941f-788ac55a06ed.png">
 
 #
 
@@ -250,6 +256,7 @@ Pseudocode:
 
 **Training**     
 
+<img width="492" alt="N" src="https://user-images.githubusercontent.com/38410965/116016663-52447000-a60b-11eb-898c-382ef33d3e16.png">
 
 # 
 
@@ -259,6 +266,9 @@ Pseudocode:
 
 **Evaluation**       
 
+<img width="584" alt="Evaluation results" src="https://user-images.githubusercontent.com/38410965/116016677-5c666e80-a60b-11eb-960b-1ea0650f3452.png">
+
+<img width="575" alt="Orthogonal" src="https://user-images.githubusercontent.com/38410965/116016687-67b99a00-a60b-11eb-9b1a-a78bd489b7f0.png">
 
 #
 
@@ -268,3 +278,5 @@ So, thank you very much. Bye bye.
 ### Step 5
 
 **Let’s race**     
+
+<img width="231" alt="242379" src="https://user-images.githubusercontent.com/38410965/116016711-8324a500-a60b-11eb-85ab-25b4a6c8fa1d.png">
