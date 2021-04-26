@@ -55,15 +55,16 @@ No other racers
 - [x] **Agent = car**     
 
 - [x] **Environment = track** 
-	turns      
-	obstacles      
-	other racers     
-	narrower roads     
-	longer roads (bigger batch size)     
-	——> more state combinations      
-	——> more complex agent needed     
-	    = more complex model     
-	    = more time & money     
+
+		turns      
+		obstacles      
+		other racers     
+		narrower roads     
+		longer roads (bigger batch size)     
+		——> more state combinations      
+		——> more complex agent needed     
+	    	    = more complex model     
+	    	    = more time & money     
 
 
 #
