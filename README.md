@@ -3,6 +3,7 @@
 TGIF project: What can I learn about AWS DR in one day?
 
 Please click the video to hear sound or follow along with the slides and transcript below the video.
+(In this case, I think the demo video is better than the transcript / slides below.)
 
 ![demo](https://user-images.githubusercontent.com/38410965/111689560-92d9ee00-8802-11eb-9406-4075edc93d90.mp4)
 
