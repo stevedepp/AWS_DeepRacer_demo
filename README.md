@@ -17,19 +17,16 @@ Please click the video to hear sound or follow along with the slides and transcr
 
 **AWS Deep Racer**     
 
-	Time trials = alone on track     
+Time trials = alone on track     
 	
-	No obstacles     
-	——>	no depth perception needed     
+No obstacles     
+——>	no depth perception needed     
 	
-	No other racers     
-	——>	no LIDAR needed     
-	
-	——> 	simplest car with only 1 camera “Popeye”     
-	
-	——>	fewer action-state pairs      
-
-	——> 	simpler model & speedier training     
+No other racers     
+——>	no LIDAR needed     
+——> 	simplest car with only 1 camera “Popeye”     
+——>	fewer action-state pairs      
+——> 	simpler model & speedier training     
 
 <img width="911" alt="Front facing" src="https://user-images.githubusercontent.com/38410965/116015307-bb75b480-a606-11eb-8fc0-264af4874ec4.png">
 
