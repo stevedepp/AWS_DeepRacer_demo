@@ -47,6 +47,8 @@ No other racers
 ### 3. Great place to learn RL     
 
 - [x] **RL ingredients**     
+
+
 	environment —> states    —> agent —> actions          —> rewards     
 	race track  —> race type —> car   —> speed & steering —> points     
 
