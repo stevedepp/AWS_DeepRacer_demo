@@ -49,8 +49,8 @@ No other racers
 - [x] **RL ingredients**     
 
 
-	environment —> states    —> agent —> actions          —> rewards     
-	race track  —> race type —> car   —> speed & steering —> points     
+		environment —> states    —> agent —> actions          —> rewards     
+		race track  —> race type —> car   —> speed & steering —> points     
 
 - [x] **Agent = car**     
 
