@@ -109,16 +109,17 @@ No other racers
 
 > Step zero is getting hooked up to AWS.  They make it real easy. I already had an account there.  The IAM roles were already set up, but it was interesting to see what the IAM roles are; they’re listed there.  The resources that are necessary: there are 5 sets of resources there, and they’re well documented.   So, that was also very interesting to see.  
 
+<img width="693" alt="To get you set up, AWS DeepRacer needs to create account r" src="https://user-images.githubusercontent.com/38410965/116016060-6d15e500-a609-11eb-9d48-507e79328320.png">
 
 ### Step 0 = 5 minutes	     
 		
 **IAM roles defined in pop out if needed**	     
 	⁃	AWS DR requires      
 	⁃	Service Role —> resources & make calls     
-	⁃	Maker Role —> SageMaker manage resources     
-	⁃	RoboMaker Access Role —> RoboMaker manage resources     
-	⁃	Lambda Access Role —> Lambda function calls resources     
-	⁃	CloudFormation Access Role —> create/manage needed stacks     
+		⁃	Maker Role —> SageMaker manage resources     
+		⁃	RoboMaker Access Role —> RoboMaker manage resources     
+		⁃	Lambda Access Role —> Lambda function calls resources     
+		⁃	CloudFormation Access Role —> create/manage needed stacks     
 	
 **AWS Resources**      
 	⁃	CloudFormation stack     
